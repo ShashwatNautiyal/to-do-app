@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0f2027; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #0d0d0d;
+}
+
+.card {
+	width: 70%;
+	max-width: 600px;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #88898cbb;
+	border-radius: 30px;
+}
+
+.card h1 {
+	font-size: 2rem;
+	padding: 2rem 0 1rem;
+}
+
+.input-box input {
+	padding: 0.5rem 1rem;
+	outline: none;
+	border: none;
+	border-radius: 22px;
+	margin-right: 0.5rem;
+	font-size: 18px;
+}
+
+.input-box button {
+	background-color: #aeb5bf;
+	color: #050302;
+	border: 1px solid #0d0d0d;
+	padding: 0.5rem 1rem;
+	outline: none;
+	border-radius: 18px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.task-list {
+	padding: 2rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+.task-item {
+	font-size: 25px;
+	list-style: none;
+	width: 100%;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.task-item li {
+	border-radius: 22px;
+	background-color: #fafafa;
+	padding: 0.5rem 1rem;
+	flex: 1;
+}
+
+.task-item i {
+	padding: 0.5rem 0.8rem;
+	margin-right: 0;
+	outline: none;
+	border: 1px solid #0d0d0d;
+	border-radius: 22px;
+	background-color: #aeb5bf;
+	color: #050302;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.check {
+	padding: 0.5rem 0.6rem !important;
+}
+
+.checked {
+	text-decoration-line: line-through;
+	opacity: 0.5;
+}
