@@ -15,16 +15,45 @@
 		<title>To-Do List</title>
 	</head>
 	<body>
+		<div class="background-element"></div>
 		<section class="card">
-			<h1>Shashwat's To-Do List</h1>
+			<div class="header">
+				<h1>To-Do List</h1>
+				<button class="add-btn"><i class="fas fa-plus"></i></button>
+			</div>
 			<div class="input-box">
-				<form>
-					<input class="task-inp" type="text" placeholder="Task" />
-					<button class="add-btn">ADD</button>
-				</form>
+				<div class="form">
+					<input class="task-name" type="text" placeholder="Task" />
+					<textarea
+						class="task-desc"
+						type="text"
+						class="decription"
+						rows="5"
+						placeholder="Add Description"
+					></textarea>
+					<div class="form-btns">
+						<button class="add-task">ADD</button>
+						<button class="cancel-task">CANCEL</button>
+					</div>
+				</div>
+			</div>
+			<div class="input-box-edit">
+				<div class="form">
+					<input class="edit-task-name" type="text" placeholder="Edit Task" />
+					<textarea
+						class="edit-task-desc"
+						type="text"
+						class="decription"
+						rows="5"
+						placeholder="Add Description"
+					></textarea>
+					<div class="form-btns">
+						<button class="edit-task">EDIT</button>
+						<button class="cancel-edit-task">CANCEL</button>
+					</div>
+				</div>
 			</div>
 			<ul class="task-list"></ul>
 		</section>
-		<script src="app.js"></script>
 	</body>
 </html>
