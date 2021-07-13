@@ -82,7 +82,7 @@ const animateBackground = () => {
 		document.getElementsByTagName(
 			'BODY'
 		)[0].style.background = `linear-gradient(60deg, rgb(${r},${g},${b}) ,rgb(${r1},${g1},${b1}) ,rgb(${r2},${g2},${b2}))`;
-	}, 200000);
+	}, 100);
 };
 
 // Variables
@@ -108,10 +108,6 @@ const toDoApp = () => {
 	addTaskBtn.addEventListener('click', addTask);
 	cancelTaskBtn.addEventListener('click', cancelTask);
 	cancelEditTaskBtn.addEventListener('click', cancelEditTask);
-
-	db.collection('todos').onSnapshot((doc) => {
-		console.log('Current data: ', doc.data());
-	});
 
 	animateBackground();
 };
@@ -201,11 +197,6 @@ const createTask = () => {
 	divIcons.appendChild(editIcon);
 	li.appendChild(divIcons);
 	ul.append(div);
-
-	db.collection('todos').add({
-		name: taskName.value,
-		desc: taskDesc.value,
-	});
 
 	taskName.value = '';
 	taskDesc.value = '';
