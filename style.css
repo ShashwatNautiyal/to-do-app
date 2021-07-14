@@ -37,6 +37,8 @@ body {
 	align-items: center;
 	background-color: #0000006e;
 	backdrop-filter: blur(10px);
+
+	-webkit-backdrop-filter: blur(10px);
 	border-radius: 30px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
 		rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,

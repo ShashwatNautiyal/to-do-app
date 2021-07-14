@@ -143,7 +143,7 @@ const editTask = (e) => {
 	});
 
 	inputBoxEdit.classList.add('show');
-	taskList.style.filter = 'blur(10px)';
+	taskList.style.filter = 'blur(5px)';
 };
 
 const delCheckTask = (e) => {
